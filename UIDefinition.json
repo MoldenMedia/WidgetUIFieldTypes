@@ -1,0 +1,65 @@
+
+{
+	"model": {
+		"fields": [{
+            "id": "theText",
+            "type": "text",
+            "title": "Text",
+            "defaultValue": "Enter text here..."
+        },{
+            "id": "theTextArea",
+            "type": "textarea",
+            "title": "Text Area",
+            "defaultValue": "Enter text here...",
+            "rows": "5",
+            "cols": "15"
+        },{
+            "id": "theNumber",
+            "type": "number",
+            "title": "Number",
+            "defaultValue": "50",
+            "min": "0",
+            "max": "100",
+            "step": "0.1",
+            "unit": "%",
+            "format": "0.01"
+        },{
+            "id": "theImage",
+            "type": "image",
+            "title": "Image",
+            "defaultValue": "http://images-singularlive.wixmp.com/356a192b7913b04c54574d18c28d46e6395428ab/images/6afaae795b474e3a9c389fe15a417437~mv2/v1/fit/w_658,h_569/6f474f5086fe5b6577b683f77cb93028.png#w_658,h_569,mt_image%2Fpng"
+        },{
+            "id": "theColor",
+            "type": "color",
+            "title": "Color",
+            "defaultValue": ""
+        },{
+            "id": "",
+            "type": "",
+            "title": "",
+            "defaultValue": ""
+        },{
+            "id": "",
+            "type": "",
+            "title": "",
+            "defaultValue": ""
+        },{
+            "id": "",
+            "type": "",
+            "title": "",
+            "defaultValue": ""
+        },
+        {
+			"id": "subComposition",
+			"type": "composition",
+			"title": "Composition"
+		}],
+        "groups" : [
+            {
+                "id" : "composition",
+                "title": "Details",
+                "childIds": ["name","title","location", "color", "subComposition"]
+            } 
+        ]
+	}
+}
